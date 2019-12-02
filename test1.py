@@ -13,6 +13,7 @@ fc8_finetuining=vgg.probs
 
 saver=tf.train.Saver()
 print("model restoring")
+# 改成自己路径！！！
 saver.restore(sess,'D:/deeplearning/dogcat/code/model/')
 filepath='D:/deeplearning/dogcat/test1/22.jpg'
 img=scipy.ndimage.imread(filepath,mode='RGB')
